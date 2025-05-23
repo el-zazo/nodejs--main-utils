@@ -1,6 +1,6 @@
 {
-  "name": "@elzazo/main-js-utils",
-  "version": "1.0.2",
+  "name": "@elzazo/main-utils",
+  "version": "1.0.1",
   "description": "my javascript utils",
   "main": "index.js",
   "author": "elzazo",

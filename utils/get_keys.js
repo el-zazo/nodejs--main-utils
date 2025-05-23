@@ -20,7 +20,7 @@ function getKeys(o = {}) {
 
   for (let key in o) {
     if (typeof o[key] === "object" && !Array.isArray(o[key])) {
-      const get_keys_res = Init.getKeys(o[key]);
+      const get_keys_res = getKeys(o[key]);
       if (get_keys_res.length > 0) {
         get_keys_res.forEach((e) => keys.push(`${key}.${e}`));
         continue;

@@ -1,3 +1,5 @@
+const { setLenByZero } = require("./set_len");
+
 /**
  * ### Get Date & Time
  *
@@ -7,8 +9,8 @@
  */
 function getFormattedDateTime(seconds = null) {
   const d = seconds !== null ? new Date(seconds) : new Date();
-  const [DD, MM, hh, mm, ss] = [d.getDate(), d.getMonth() + 1, d.getHours(), d.getMinutes(), d.getSeconds()].map((e) => Init.setLenByZero(e));
-  const YYYY = Init.setLenByZero(d.getFullYear(), 4);
+  const [DD, MM, hh, mm, ss] = [d.getDate(), d.getMonth() + 1, d.getHours(), d.getMinutes(), d.getSeconds()].map((e) => setLenByZero(e));
+  const YYYY = setLenByZero(d.getFullYear(), 4);
 
   return {
     time: `${hh}:${mm}:${ss}`,

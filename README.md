@@ -14,4 +14,3 @@ All My JavaScript Utils
 - separateNumbers
 - secondsToDuration
 - datetimeToDuration
-# nodejs--main-utils

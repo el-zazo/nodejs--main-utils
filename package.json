@@ -1,7 +1,7 @@
 {
   "name": "@elzazo/main-utils",
-  "version": "1.0.1",
-  "description": "my javascript utils",
+  "version": "1.0.2",
+  "description": "A collection of JavaScript utility functions for common tasks",
   "main": "index.js",
   "author": "elzazo",
   "license": "ISC"

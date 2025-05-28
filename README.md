@@ -20,6 +20,10 @@ console.log(formattedDate.datetime); // "DD/MM/YYYY HH:MM:SS"
 // Convert seconds to duration
 const duration = utils.secondsToDuration(175);
 console.log(duration); // "00:02:55"
+
+// Check if an element exists in an array (loose equality)
+const exists = utils.arrayIncludes([1, 2, 3], "3");
+console.log(exists); // true
 ```
 
 ## Available Functions
@@ -41,6 +45,10 @@ console.log(duration); // "00:02:55"
 
 - **getKeys(obj)** - Extracts all keys from an object, including nested keys using dot notation
 - **isObject(value)** - Checks if a value is a plain JavaScript object
+
+### Array Utilities
+
+- **arrayIncludes(list, element)** - Checks if an element exists in an array using loose equality (==)
 
 ### Random Utilities
 

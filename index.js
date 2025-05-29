@@ -16,6 +16,7 @@ const seconds_to_duration = require("./src/utils/seconds_to_duration");
 const separate_numbers = require("./src/utils/separate_numbers");
 const set_len = require("./src/utils/set_len");
 const wait = require("./src/utils/wait");
+const format_price = require("./src/utils/format_price");
 
 /**
  * Export all utility functions
@@ -46,4 +47,7 @@ module.exports = {
 
   // Timing utilities
   ...wait,
+
+  // Format price
+  ...format_price,
 };
